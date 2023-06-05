@@ -1,0 +1,11 @@
+:root {
+  --s-text-primary: #097129;
+  --s-text-gary: rgba(55, 65, 81, 1);
+  --s-text-gary-4: rgba(0, 0, 0, 0.4);
+  --s-text-default: #213547;
+  /* global background color */
+  --s-bg-global: rgba(255, 255, 255, 0.5);
+  --s-border-color-gray: rgba(229, 231, 235, 1);
+  --s-nav-height: 55px;
+  --s-base-width: 1200px;
+}

@@ -4,7 +4,8 @@
     "source.fixAll.eslint": true
   },
   "files.associations": {
-    "*.css": "postcss"
+    "*.css": "css"
   },
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "editor.tabSize": 2
 }

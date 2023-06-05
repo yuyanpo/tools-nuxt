@@ -1,11 +1,10 @@
 <script setup lang="ts">
-const online = useOnline()
+// const online = useOnline()
 </script>
 
 <template>
-  <div>
-    <Logos mb-6 />
-    <Suspense>
+  <div class="sfq-base-content">
+    <!-- <Suspense>
       <ClientOnly>
         <PageView v-if="online" />
         <div v-else text-gray:80>
@@ -18,6 +17,7 @@ const online = useOnline()
         </div>
       </template>
     </Suspense>
-    <InputEntry />
+    <InputEntry /> -->
+    <HomeLinks />
   </div>
 </template>

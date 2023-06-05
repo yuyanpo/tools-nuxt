@@ -1,9 +1,13 @@
 <template>
-  <main class="px-10 py-20 text-center">
+  <main class="sfq-container">
+    <Header />
     <slot />
     <Footer />
-    <div class="mx-auto mt-5 text-center text-sm opacity-25">
-      [Default Layout]
-    </div>
   </main>
 </template>
+
+<style lang="less" scoped>
+.sfq-container {
+  padding-top: var(--s-nav-height);
+}
+</style>
