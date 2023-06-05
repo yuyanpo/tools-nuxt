@@ -10,7 +10,7 @@ export const navLists = [
       { title: 'SQL格式化/压缩', link: '/format/sql' },
       { title: 'JSON/XML互转', link: '/format/json2xml' },
       { title: 'XML格式化', link: '/format/xml' },
-    ]
+    ],
   },
   {
     title: '编码/加密',
@@ -19,13 +19,13 @@ export const navLists = [
       { title: 'UTF-8编码汉字互转', link: '/encrypt/utf8' },
       { title: 'ASCii编码汉字互转', link: '/encrypt/ascii' },
       { title: 'URL编码/解码', link: '/encrypt/url' },
-    ]
+    ],
   },
   {
     title: '文档/手册',
     children: [
       { title: 'HTTP状态码', link: '/doc/http_code' },
-    ]
+    ],
   },
   { title: '关于', link: '/about' },
 ]

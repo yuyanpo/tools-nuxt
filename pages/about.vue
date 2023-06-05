@@ -1,6 +1,6 @@
 <template>
   <div class="sfq-base-content">
-    <div class="sfq-card pt-4">
+    <div class="pt-4 sfq-card">
       <!-- <About /> -->asdfa
     </div>
   </div>
