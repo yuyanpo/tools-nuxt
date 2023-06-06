@@ -3,15 +3,15 @@ const router = useRouter()
 </script>
 
 <template>
-  <main p="x4 y10" text="center teal-700 dark:gray-200">
-    <div text-4xl>
-      <div i-carbon-warning inline-block />
+  <div class="sfq-base-content" p="x4 y10" text="center gray-400">
+    <div text-3xl>
+      <div i-carbon-face-dissatisfied inline-block />
     </div>
-    <div>Not found</div>
+    <div>Page Not Found</div>
     <div>
-      <button text-sm btn m="3 t8" @click="router.back()">
+      <button m="3 t8" text-sm btn @click="router.back()">
         Back
       </button>
     </div>
-  </main>
+  </div>
 </template>

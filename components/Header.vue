@@ -33,7 +33,7 @@ import logo from '/favicon.svg'
         </div>
       </nav>
       <div class="operations">
-        <span class="font-mono text-sm text-gray-300">This domain name seeks cooperation or sale.</span>
+        <span class="font-mono text-sm opacity-10">This domain name seeks cooperation or sale.</span>
       </div>
     </div>
   </section>
@@ -43,10 +43,10 @@ import logo from '/favicon.svg'
 .sfq-header {
   width: 100%;
   height: var(--s-nav-height);
-  background-color: var(--s-bg-global);
+  background-color: var(--s-bg-nav);
   backdrop-filter: saturate(50%) blur(4px);
   // box-shadow: 0px 1px 4px rgba(0, 21, 41, 0.08);
-  border-bottom: 1px solid var(--s-border-color-gray);
+  border-bottom: 1px solid var(--s-divider-light);
   position: fixed;
   top: 0;
   left: 0;
@@ -60,6 +60,7 @@ import logo from '/favicon.svg'
   margin: 0 auto;
   .logo {
     margin-right: 50px;
+    user-select: none;
     a {
       display: flex;
       align-items: center;
@@ -67,7 +68,6 @@ import logo from '/favicon.svg'
     img {
       display: block;
       width: 28px;
-      fill: red;
       margin-right: 8px;
     }
     span {
@@ -120,7 +120,7 @@ import logo from '/favicon.svg'
       }
       &:hover {
         button {
-          color: rgba(60, 60, 60, .7);
+          color: var(--s-text-second);
         }
         .menu-sub {
           opacity: 1;
@@ -133,8 +133,8 @@ import logo from '/favicon.svg'
       border-radius: 4px;
       padding: 12px 0;
       min-width: 180px;
-      border: 1px solid transparent;
-      background: #fff;
+      border: 1px solid var(--s-divider-nav-sub);
+      background: var(--s-bg-nav-sub);
       box-shadow: 0 12px 32px rgba(0, 0, 0, .1), 0 2px 6px rgba(0, 0, 0, .08);
       position: absolute;
       top: calc(var(--s-nav-height) / 2 + 15px);

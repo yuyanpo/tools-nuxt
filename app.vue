@@ -21,7 +21,7 @@ html, body , #__nuxt{
 }
 
 html.dark {
-  background: #222;
-  color: white;
+  background: var(--s-black);
+  color: rgba(255, 255, 255, 0.5);
 }
 </style>

@@ -52,11 +52,11 @@ const links = [
     </div>
     <div class="lists">
       <div class="grid grid-cols-4 gap-4">
-        <div v-for="item, idx in links" :key="idx" class="h-20 border border-transparent rounded bg-gray-50 transition duration-500 hover:border-green-200 hover:bg-green-50">
+        <div v-for="item, idx in links" :key="idx" class="h-20 rounded bg-$s-bg-mute transition duration-500 hover:bg-green-50 dark:hover:bg-neutral-700">
           <a class="h-full flex" :href="item.href" target="_blank" rel="noopener noreferrer">
             <i class="mx-2 mt-3 h-26px w-26px" :class="item.icon" />
             <div class="flex-1">
-              <h3 class="mb-1 mt-3 text-gray-600">{{ item.title }}</h3>
+              <h3 class="mb-1 mt-3 text-$s-text-default">{{ item.title }}</h3>
               <p class="link-desc pr-2">{{ item.desc }}</p>
             </div>
           </a>
