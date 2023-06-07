@@ -34,11 +34,11 @@ export default defineNuxtConfig({
         target: 'esnext',
       },
     },
-    prerender: {
+    /* prerender: {
       crawlLinks: false,
       routes: ['/'],
-      // ignore: ['/hi'],
-    },
+      ignore: ['/hi'],
+    }, */
   },
 
   app: {
