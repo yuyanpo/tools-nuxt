@@ -66,7 +66,7 @@ const links = [
   </section>
 </template>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .link-desc {
   font-size: 12px;
   height: 3em;

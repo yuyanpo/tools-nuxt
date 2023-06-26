@@ -39,7 +39,7 @@ import logo from '/favicon.svg'
   </section>
 </template>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .sfq-header {
   width: 100%;
   height: var(--s-nav-height);
