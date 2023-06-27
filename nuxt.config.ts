@@ -8,7 +8,10 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
+    '@nuxt/content',
   ],
+
+  // extends: ['@nuxt-themes/typography'],
 
   experimental: {
     // when using generate, payload js assets included in sw precache manifest
@@ -22,7 +25,26 @@ export default defineNuxtConfig({
     '@unocss/reset/tailwind.css',
     '~/styles/vars.css',
     '~/styles/global.css',
+    '~/styles/markdown.scss',
   ],
+
+  content: {
+    highlight: {
+      theme: {
+        // Default theme (same as single string)
+        default: 'vitesse-light',
+        // Theme used if `html.dark`
+        dark: 'vitesse-dark',
+        // Theme used if `html.sepia`
+        sepia: 'monokai',
+      },
+      preload: [
+        'json',
+        'javascript',
+        'typescript',
+      ],
+    },
+  },
 
   colorMode: {
     classSuffix: '',

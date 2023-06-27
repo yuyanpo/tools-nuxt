@@ -1,13 +1,9 @@
 <script setup lang="ts">
-import { appName } from '~/constants/index'
-
 useHead({
-  title: `首页 | ${appName}`,
+  title: '首页',
 })
 </script>
 
 <template>
-  <div class="sfq-base-content">
-    <HomeLinks />
-  </div>
+  <HomeLinks />
 </template>

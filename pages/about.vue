@@ -1,7 +1,11 @@
+<script setup lang="ts">
+useHead({
+  title: '关于',
+})
+</script>
+
 <template>
-  <div class="sfq-base-content">
-    <div class="pt-4 sfq-card">
-      <!-- <About /> -->asdfa
-    </div>
+  <div class="pt-4 sfq-card">
+    <ContentDoc path="/about" class="prose" />
   </div>
 </template>
