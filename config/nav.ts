@@ -25,6 +25,7 @@ export const navLists = [
     title: '文档/手册',
     children: [
       { title: 'HTTP状态码', link: '/doc/http_code' },
+      { title: 'HTTP请求方法', link: '/doc/http_method' },
     ],
   },
   { title: '关于', link: '/about' },
