@@ -1,6 +1,5 @@
 ---
-title: xxxxx
-description: Nuxt's goal is to make web development intuitive and performant with a great Developer Experience in mind.
+title: markdown example
 ---
 
 # 一级标题
