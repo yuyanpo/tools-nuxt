@@ -6,6 +6,6 @@ useHead({
 
 <template>
   <div class="pt-4 sfq-card">
-    <ContentDoc path="/about" class="prose" />
+    <ContentDoc path="/about" class="markdown-body" />
   </div>
 </template>

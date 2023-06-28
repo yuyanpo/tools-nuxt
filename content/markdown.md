@@ -41,3 +41,6 @@ console.log(a);
 * [ ] 待办3
 
 **删除**
+
+## 键盘快捷键
+To reboot your computer, press <kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>del</kbd>.

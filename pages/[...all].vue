@@ -3,7 +3,7 @@
 
 <template>
   <div class="pt-4 sfq-card">
-    <ContentDoc class="prose">
+    <ContentDoc class="markdown-body">
       <template #not-found>
         <div p="x4 y10" text="center gray-400">
           <div text-3xl>
