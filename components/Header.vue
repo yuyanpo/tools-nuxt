@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { navLists } from '~/config/nav'
 import logo from '/favicon.svg'
+
+const route = useRoute()
 </script>
 
 <template>
@@ -15,19 +17,24 @@ import logo from '/favicon.svg'
       <nav class="menus">
         <div v-for="(item, index) in navLists" :key="index">
           <div v-if="item.children" class="menu-group">
-            <button>
+            <button :class="route.fullPath.includes(item.path) ? '!border-b-1px !border-color-$s-text-primary' : ''">
               <span>{{ item.title }}</span>
               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="menu-text-icon">
                 <path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z" />
               </svg>
             </button>
             <div class="menu-sub">
-              <NuxtLink v-for="(sub, idx) in item.children" :key="idx" :to="sub.link" class="menu-sub-item">
+              <NuxtLink
+                v-for="(sub, idx) in item.children"
+                :key="idx"
+                :to="`/${[item.path, sub.path].join('/')}`"
+                class="menu-sub-item"
+              >
                 {{ sub.title }}
               </NuxtLink>
             </div>
           </div>
-          <NuxtLink v-else :to="item.link" class="menu-item">
+          <NuxtLink v-else :to="item.path" class="menu-item">
             {{ item.title }}
           </NuxtLink>
         </div>
@@ -101,7 +108,6 @@ import logo from '/favicon.svg'
         padding: 0 12px;
         height: var(--s-nav-height);
         color: var(--s-text-default);
-        border: none;
         background-color: transparent;
         cursor: pointer;
         transition: color .5s;
