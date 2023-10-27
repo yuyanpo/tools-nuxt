@@ -81,6 +81,18 @@ const homeLinks: Links[] = [
     ],
   },
   {
+    name: '💎 Resources',
+    links: [
+      {
+        title: 'CSS Loaders',
+        desc: 'The Biggest Collection of Loading Animations',
+        icon: 'i-logos-css-3-official',
+        href: 'https://css-loaders.com/',
+        type: 'link',
+      },
+    ],
+  },
+  {
     name: '🤖 AI',
     links: [
       {
