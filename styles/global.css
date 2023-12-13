@@ -25,3 +25,7 @@ p {
   padding: 20px 0;
   margin: 0 auto;
 }
+
+.sfq-full-content {
+  height: calc(100vh - var(--s-nav-height) - 64px);
+}

@@ -7,7 +7,7 @@ const route = useRoute()
 
 <template>
   <section class="sfq-header">
-    <div class="sfq-header-inner">
+    <div class="sfq-header-inner px-6">
       <div class="logo">
         <NuxtLink to="/">
           <img :src="logo" alt="logo">
@@ -61,7 +61,6 @@ const route = useRoute()
 }
 .sfq-header-inner {
   display: flex;
-  width: var(--s-base-width);
   height: var(--s-nav-height);
   align-items: center;
   margin: 0 auto;
