@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import {
   TYPE_ARRAY,
   TYPE_BOOL,
@@ -47,7 +48,7 @@ export function buildDom(value: JsonValue,
   if (type === TYPE_OBJECT || type === TYPE_ARRAY) {
     // @ts-expect-error - TODO
     for (const objKey in value) {
-      // @ts-expect-error - TODO
+      // eslint-disable-next-line no-prototype-builtins
       if (value.hasOwnProperty(objKey)) {
         nonZeroSize = true
         break // no need to keep counting; only need one
@@ -141,6 +142,7 @@ export function buildDom(value: JsonValue,
 
         let lastComma
         for (const k in value) {
+          // eslint-disable-next-line no-prototype-builtins
           if (value.hasOwnProperty(k)) {
             // count++
             // @ts-expect-error - TODO
