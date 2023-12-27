@@ -1,4 +1,6 @@
 {
+  "name": "tools-nuxt",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@8.6.0",
   "scripts": {

@@ -11,7 +11,7 @@ const route = useRoute()
       <div class="logo">
         <NuxtLink to="/">
           <img :src="logo" alt="logo">
-          <span>闪·芬奇</span>
+          <span>前端工具箱</span>
         </NuxtLink>
       </div>
       <nav class="menus">
@@ -39,8 +39,10 @@ const route = useRoute()
           </NuxtLink>
         </div>
       </nav>
-      <div class="operations">
-        <span class="font-mono text-sm opacity-10">This domain name seeks cooperation or sale.</span>
+      <div class="flex-auto" />
+      <div class="flex items-center gap-2 text-sm text-gray-400">
+        <!-- <span class="font-mono text-sm opacity-10">This domain name seeks cooperation or sale.</span> -->
+        <DarkToggle />
       </div>
     </div>
   </section>
@@ -82,7 +84,6 @@ const route = useRoute()
   }
   .menus {
     display: flex;
-    flex: 1;
     .menu-item {
       display: block;
       padding: 0 12px;

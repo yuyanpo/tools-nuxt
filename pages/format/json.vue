@@ -7,7 +7,7 @@ definePageMeta({
   layout: 'fullscreen',
 })
 
-const sourceJson = ref('{ "name": "闪·芬奇", "description": "五彩缤纷工具箱", "star": 1024, "skills": ["format", "encrypt", "doc"], "weburl": "https://shanfenqi.com" }')
+const sourceJson = ref('{ "name": "前端工具箱", "description": "功能丰富的前端工具箱", "star": 1024, "skills": ["format", "encrypt", "doc"], "weburl": "https://shanfenqi.com" }')
 </script>
 
 <template>
